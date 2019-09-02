@@ -1,0 +1,690 @@
+  281  vim program.c
+  282  vim ~/.vimrc
+  283  vim program.c
+  284  vim ~/.vimrc
+  285  vim program.c
+  286  gcc -E program.i program.c
+  287  gcc -E -o program.i program.c
+  288  ls
+  289  vim program.i 
+  290  gcc -S program.c
+  291  ls
+  292  vim program.s
+  293  gcc -c program.c
+  294  ls
+  295  gcc -o program.out program.o
+  296  ls
+  297  ./program.out 
+  298  ls
+  299  man readelf
+  300  ls
+  301  readelf program.out 
+  302  readelf -a program.out 
+  303  readelf -a program.out  | less
+  304  readelf -h program.out  | less
+  305  objdump program.out 
+  306  objdump -f program.out 
+  307  objdump -h program.out 
+  308  objdump -h program.out | less
+  309  objdump -S program.out | less
+  310  readelf -h program.out | less
+  311  objdump -S program.out | less
+  312  man size
+  313  size program.out 
+  314  file program.c
+  315  file program.out
+  316  man file
+  317  file program.c
+  318  file program.out
+  319  file -b program.out
+  320  exit
+  321  cd aug2019/
+  322  s
+  323  ls
+  324  cd kdac/
+  325  ls
+  326  vim program.c
+  327  ls
+  328  gcc program.c
+  329  ls
+  330  readelf -h a.out 
+  344  ls
+  345  gcc -i program.c 
+  346  ls
+  347  gcc -save-temps program.c 
+  348  ls
+  349  vim program.c
+  350  vim program.i
+  351  ls -h -l
+  352  vim program.s
+  353  vim program.o
+  354  objdump -a program.o
+  355  objdump -h program.o
+  356  readelf -h a.out
+  357  readelf -a a.out
+  358  readelf -a a.out | less
+  359  ls -l
+  360  ./a.out
+  361  exit
+  362  pwd
+  363  cd /
+  364  pwd
+  365  ls
+  366  ls bin
+  367  file ls
+  368  ls sbin
+  369  ls boot
+  370  ls
+  371  pwd
+  372  cd -
+  373  cd /
+  374  pwd
+  375  cd ~
+  376  pwd
+  377  cd aug2019/kdac/
+  378  pwd
+  379  cd -
+  380  pwd
+  381  echo $PWD
+  382  clear
+  383  cd -
+  384  pwd
+  385  echo $PWD
+  386  echo $HOME
+  387  ls
+  388  pwd
+  389  ls /
+  390  ls /bin
+  391  ls /usr/include/
+  392  cd
+  393  ls
+  394  ls ds
+  395  ls
+  396  cd aug2019/
+  397  ls
+  398  mkdir dac dmc desd
+  399  ls
+  400  mkdir dac
+  401  mkdir -p one/two/three
+  402  ls
+  403  ls one/
+  404  ls one/two/
+  405  ls -R one/
+  406  rmdir one
+  407  rmdir dmc
+  408  ls
+  409  rm -r one/
+  410  ls
+  411  ls -l
+  412  ls -l -s
+  413  cd ~
+  414  ls -l
+  415  cd -
+  416  mkdir -p one/two/three
+  417  ls -l -R
+  418  ls -l
+  419  ls -l -s
+  420  ls -l
+  421  ls
+  422  cat > india.txt
+  423  ls -l
+  424  ls -l /dev
+  425  exit
+  426  cd aug2019/
+  427  ls
+  428  cd kdac/
+  429  ls
+  430  git clone http://200.0.1.1/kdac/os 
+  431  ls
+  432  ping 200.0.1.1
+  433  cd aug2019/
+  434  ls
+  435  cd kdac/
+  436  ls
+  437  git clone http://200.0.1.1/kdac/os
+  438  ls
+  439  cd os/
+  440  ls
+  441  mkdir assignments
+  442  cd assignments/
+  443  ls
+  444  cd ..
+  445  cd .
+  446  cd ..
+  447  ls
+  448  mv os.txt os/
+  449  ls
+  450  cd os/
+  451  ls
+  452  git add .
+  453  git commit -m "os day01"
+  454  git push
+  455  exit
+  456  pwd
+  457  ls
+  458  mkdir demo
+  459  cd demo/
+  460  mkdir -p os/linux_commands
+  461  ls -R 
+  462  ls -R os
+  463  pwd
+  464  ls
+  465  cd os/linux_commands/
+  466  pwd
+  467  cat > file.txt
+  468  ls
+  469  cat file.txt 
+  470  cat > file.txt
+  471  cat file.txt 
+  472  cat >> file.txt
+  473  cat file.txt 
+  474  cat > file1.txt
+  475  cat file.txt file1.txt 
+  476  man cat
+  477  cat file.txt file1.txt 
+  478  cat -n file.txt file1.txt 
+  479  cat -E file.txt file1.txt 
+  480  man cat
+  481  man mkdir
+  482  man 1 mkdir
+  483  man 2 mkdir
+  484  man 3 mkdir
+  485  man 1 printf
+  486  man 2 printf
+  487  man 3 printf
+  488  man 3 malloc
+  489  man man
+  490  man ls
+  491  cd ~
+  492  pwd
+  493  cd demo/
+  494  ls
+  495  cd -
+  496  cd os/
+  497  ls -l
+  498  ls -l -a
+  499  pwd
+  500  cd ..
+  501  pwd
+  502  cd demo/
+  503  ls
+  504  cp /home/sunbeam/notes.txt .
+  505  ls
+  506  ls -l
+  507  cat > india.txt
+  508  ls
+  509  ls -l india.txt 
+  510  man chmod
+  511  ls -l india.txt 
+  512  chmod +x india.txt 
+  513  ls -l india.txt 
+  514  chmod -x india.txt 
+  515  ls -l india.txt 
+  516  chmod u+x india.txt 
+  517  ls -l india.txt 
+  518  chmod g+x india.txt 
+  519  ls -l india.txt 
+  520  chmod o+x india.txt 
+  521  ls -l india.txt 
+  522  chmod o-x india.txt 
+  523  ls -l india.txt 
+  524  chmod g-x india.txt 
+  525  ls -l india.txt 
+  526  chmod -x india.txt 
+  527  ls -l india.txt 
+  528  chmod g+w india.txt 
+  529  ls -l india.txt 
+  530  chmod +x india.txt 
+  531  chmod +w india.txt 
+  532  ls -l india.txt 
+  533  chmod -x india.txt 
+  534  ls -l india.txt 
+  535  chmod 0000 india.txt 
+  536  ls -l india.txt 
+  537  chmod 0777 india.txt 
+  538  ls -l india.txt 
+  539  ls -l
+  540  chmod 0644 india.txt 
+  541  ls -l
+  542  ls
+  543  cd ..
+  544  s
+  545  ls
+  546  rmdir demo/
+  547  rm -r demo
+  548  ls
+  549  cd aug2019/
+  550  ls
+  551  cd kdac/
+  552  ls
+  553  cd myos/
+  554  ls
+  555  cat > numbers.txt
+  556  cat numbers.txt 
+  557  cat numbers.txt | less
+  558  head numbers.txt 
+  559  head -5 numbers.txt 
+  560  tail numbers.txt 
+  561  cat > file.txt
+  562  cat file.txt 
+  563  sort file.txt 
+  564  cat >> file.txt 
+  565  sort file.txt 
+  566  sort -n file.txt 
+  567  uniq file.txt 
+  568  sort -n file.txt | uniq
+  569  echo "SunBeam" | tr "A-Z" "a-z"
+  570  echo "SunBeam" | tr "A-Za-z" "a-zA-Z"
+  571  echo $PATH
+  572  echo $PATH | tr ":" "\n"
+  573  man w
+  574  ls
+  575  cd ..
+  576  ls
+  577  cd temp/
+  578  s
+  579  ls
+  580  mkdir commands
+  581  cd commands/
+  582  ls
+  583  ls -l
+  584  chmod -x *.txt
+  585  ls
+  586  ls -l
+  587  touch *
+  588  s
+  589  ls
+  590  ls -l
+  591  cat sunbeam.txt 
+  592  cat sunbeam.txt | cut -d " " -f1
+  593  ls -l
+  594  ls -l | cut -d " " -f1,2
+  595  ls -l | cut -d " " -f1,5
+  596  ls -l | cut -d " " -f1,4
+  597  ls -l -i | cut -d " " -f1,4
+  598  ls -1 -i | cut -d " " -f1,4
+  599  ls -1
+  600  ls -1 -i
+  601  cat sunbeam.txt 
+  602  cat sunbeam.txt | cut -d " " -f1
+  603  cat sunbeam.txt | cut -d " " -f2
+  604  cat sunbeam.txt | cut -d " " -f3
+  605  cat sunbeam.txt | cut -d " " -f4
+  606  cat sunbeam.txt | cut -d " " -f5
+  607  cat sunbeam.txt | cut -d " " -f6
+  608  cat sunbeam.txt | cut -d " " -f7
+  609  cat sunbeam.txt | cut -d " " -f8
+  610  ls -l
+  611  cat sunbeam.txt 
+  612  grep "device" sunbeam.txt 
+  613  grep "java" sunbeam.txt 
+  614  grep "Java" sunbeam.txt 
+  615  grep -i "Java" sunbeam.txt 
+  616  grep -v "Java" sunbeam.txt 
+  617  grep -v -i "Java" sunbeam.txt 
+  618  grep -n -i "Java" sunbeam.txt 
+  619  grep -c -i "Java" sunbeam.txt 
+  620  grep -c -i -v "Java" sunbeam.txt 
+  621  grep -i "program" sunbeam.txt 
+  622  grep -i -w "program" sunbeam.txt 
+  623  grep -A2 "program" sunbeam.txt 
+  624  grep -A2 "device" sunbeam.txt 
+  625  grep -B2 "device" sunbeam.txt 
+  626  grep -C2 "device" sunbeam.txt 
+  627  grep "is" taste.txt 
+  628  grep "^is" taste.txt 
+  629  grep "is$" taste.txt 
+  630  grep "^is$" taste.txt 
+  631  cat select.txt 
+  632  grep "bg" select.txt 
+  633  grep "b.g" select.txt 
+  634  grep "b[a]g" select.txt 
+  635  grep "b[a-z]g" select.txt 
+  636  grep "b[a,b]g" select.txt 
+  637  grep "b[a,i]g" select.txt 
+  638  grep "b[a,i,u]g" select.txt 
+  639  grep "b[aiu]g" select.txt 
+  640  grep "b[a-z]g" select.txt 
+  641  grep "b*g" select.txt 
+  642  grep "b\*g" select.txt 
+  643  grep -f "b*g" select.txt 
+  644  fgrep "b*g" select.txt 
+  645  grep -F "b*g" select.txt 
+  646  cat repeat.txt 
+  647  grep "wo*w"
+  648  grep "wo*w" repeat.txt 
+  649  grep "wo.w" repeat.txt 
+  650  grep "wo+w" repeat.txt 
+  651  grep "wo?w" repeat.txt 
+  652  egrep "wo?w" repeat.txt 
+  653  egrep "wo+w" repeat.txt 
+  654  egrep "wo*w" repeat.txt 
+  655  egrep "wo{2}w" repeat.txt 
+  656  egrep "wo{4}w" repeat.txt 
+  657  egrep "wo{2,4}w" repeat.txt 
+  658  egrep "wo{2,}w" repeat.txt 
+  659  egrep "wo{,4}w" repeat.txt 
+  660  vim program.c
+  661  gcc -E -o program.i program.c
+  662  ls
+  663  cat program.i
+  664  gcc -S program.c
+  665  ls
+  666  cat program.s
+  667  gcc -c program.c
+  668  ls
+  669  gcc -o program.out program.o
+  670  ls
+  671  ./program.out 
+  672  ls
+  673  vim program.c
+  674  gcc -c program.c
+  675  gcc -o program.out program.o
+  676  gcc -o program.out program.o -nostartfiles -esachin
+  677  ./program.out 
+  678  vim program.c
+  679  gcc -c program.c
+  680  gcc -o program.out program.o -nostartfiles -esachin
+  681  ./program.out 
+  682  vim program.c
+  683  exit
+  684  tty
+  685  exit
+  686  tty
+  687  exit
+  688  ls -l
+  689  cd aug2019/
+  690  ls
+  691  cd kdac/
+  692  ls
+  693  cd os/
+  694  ls
+  695  cd ..
+  696  ls
+  697  cd temp/
+  698  ls
+  699  cd commands/
+  700  ls
+  701  cd ..
+  702  s
+  703  ls
+  704  ls -l
+  705  ls -l -a
+  706  mkdir one
+  707  ls
+  708  ls -l -a one/
+  709  cd ~
+  710  ls -l
+  711  ls
+  712  ls -a
+  713  pwd
+  714  cd ..
+  715  pwd
+  716  cd ~/aug2019/kdac/
+  717  pwd
+  718  cd ../../..
+  719  pwd
+  720  cd -
+  721  pwd
+  722  ls -l
+  723  mkdir project
+  724  cd project/
+  725  ls
+  726  vim program.c
+  727  ls -l
+  728  gcc -E -o program.i program.c
+  729  ls
+  730  cat program.i
+  731  gcc -S program.c
+  732  ls
+  733  cat program.s
+  734  gcc -c program.c
+  735  ls
+  736  gcc -o output program.o
+  737  ls
+  738  ./output 
+  739  rm output 
+  740  gcc -o program.out program.o
+  741  ./program.out 
+  742  ls -l
+  743  rm *.i *.o
+  744  ls
+  745  rm *.i *.out
+  746  rm *.out
+  747  ls
+  748  rm *.s
+  749  ls
+  750  vim program.c 
+  751  gcc -c program.c 
+  752  gcc -o program.out program.o
+  753  gcc -o program.out program.o -nostartfiles -esachin
+  754  ls -l
+  755  ./program.out 
+  756  vim program.c 
+  757  gcc -c program.c 
+  758  gcc -o program.out program.o -nostartfiles -esachin
+  759  ./program.out 
+  760  ls -l
+  761  man gcc
+  762  ./program.out 
+  763  ls -l
+  764  ls -M
+  765  ls -l
+  766  ls -l > out.txt
+  767  ls -l
+  768  cat out.txt 
+  769  wc < out.txt 
+  770  ls -M
+  771  ls -M 2> err.txt
+  772  cat err.txt 
+  773  ls -l
+  774  ls -l > temp.txt
+  775  wc < temp.txt 
+  776  ls -l temp.txt 
+  777  ls -l | wc
+  778  ls
+  779  rm *.txt
+  780  ls -l
+  781  ls -l | wc
+  782  ls
+  783  cat > numbers.txt
+  784  cat numbers.txt 
+  785  cat numbers.txt | less
+  786  cat numbers.txt | head
+  787  head -5 numbers.txt 
+  788  tail numbers.txt 
+  789  tail -5 numbers.txt 
+  790  cat numbers.txt | head
+  791  cat numbers.txt | head | tail -5
+  792  cat > file.txt
+  793  cat file.txt 
+  794  sort file.txt 
+  795  sort -n file.txt 
+  796  cat file.txt 
+  797  uniq file.txt 
+  798  sort -n file.txt | uniq
+  799  ls -l
+  800  echo $PATH
+  801  echo $PATH | tr ":" "\n"
+  802  echo "SunBeam"
+  803  echo "SunBeam" | tr "A-z" "a-z"
+  804  echo "SunBeam" | tr "A-Z" "a-z"
+  805  echo "SunBeam" | tr "A-Za-z" "a-zA-Z"
+  806  ls -l
+  807  ls -l | cut -d " " -f1
+  808  ls -l | cut -d " " -f1,2
+  809  ls -l | cut -d " " -f1,2,3
+  810  cd ..
+  811  ls
+  812  cd temp/
+  813  ls
+  814  cd commands/
+  815  ls
+  816  cat sunbeam.txt 
+  817  cat sunbeam.txt | cut -d " " -f1
+  818  cat sunbeam.txt | cut -d " " -f1,2
+  819  history
+  820  tty
+  821  w
+  822  man w
+  823  adduser sachin
+  824  sudo adduser sachin
+  825  w
+  826  sudo adduser nilesh
+  827  w
+  828  who
+  829  whoami
+  830  w
+  831  sudo deluser nilesh
+  832  w
+  833  sudo deluser sachin
+  834  w
+  835  ls -l
+  836  rm *.i *.o
+  837  s
+  838  ls -l
+  839  rm *.out
+  840  ls -l
+  841  cat sunbeam.txt 
+  842  grep "java" sunbeam.txt 
+  843  grep "Java" sunbeam.txt 
+  844  grep -i "Java" sunbeam.txt 
+  845  grep -i -v "Java" sunbeam.txt 
+  846  grep -i -c "Java" sunbeam.txt 
+  847  grep -i -n "Java" sunbeam.txt 
+  848  ls
+  849  cat program.c
+  850  grep -n "sachin" program.c
+  851  grep "program" sunbeam.txt 
+  852  grep -w "program" sunbeam.txt 
+  853  grep "program" *.txt
+  854  grep "nilesh" /home/sunbeam/*
+  855  grep "nilesh" /home/sunbeam/feb19/feb19/*/*
+  856  grep "nilesh" /home/sunbeam/feb19/feb19/*/*/*
+  857  ls
+  858  cat select.txt 
+  859  cat taste.txt 
+  860  grep "is" taste.txt 
+  861  grep "^is" taste.txt 
+  862  grep "is$" taste.txt 
+  863  cat taste.txt 
+  864  grep "^is$" taste.txt 
+  865  cat select.txt 
+  866  grep "bg" select.txt 
+  867  grep "b[a]g" select.txt 
+  868  grep "b[ai]g" select.txt 
+  869  grep "b[aiu]g" select.txt 
+  870  grep "b[a-z]g" select.txt 
+  871  grep "b*g" select.txt 
+  872  grep "b\*g" select.txt 
+  873  grep -F "b*g" select.txt 
+  874  fgrep "b*g" select.txt 
+  875  cat repeat.txt 
+  876  egrep "wo*w" repeat.txt 
+  877  egrep "wo+w" repeat.txt 
+  878  egrep "wo?w" repeat.txt 
+  879  egrep "wo{3}w" repeat.txt 
+  880  egrep "wo{5}w" repeat.txt 
+  881  egrep "wo{,5}w" repeat.txt 
+  882  egrep "wo{3,}w" repeat.txt 
+  883  egrep "wo{3,5}w" repeat.txt 
+  884  cd ..
+  885  ls
+  886  mkdir employee
+  887  cd employee/
+  888  s
+  889  ls
+  890  vim main.c
+  891  ls
+  892  vim main.c
+  893  cd ~
+  894  ls -a
+  895  vim .vimrc
+  896  cd -
+  897  vim main.c 
+  898  pwd
+  899  vim /home/sunbeam/.vimrc
+  900  vim main.c 
+  901  vim emp.h emp.c main.c
+  902  ls -l
+  903  rm "'"
+  904  ls -l
+  905  gcc -c emp.c
+  906  ls -l
+  907  gcc -c main.c 
+  908  ls -l
+  909  gcc -o emp.out emp.o main.o
+  910  ls -l
+  911  ./emp.out 
+  912  vim main.c 
+  913  gcc -c main.c
+  914  gcc -c emp.c
+  915  gcc -o emp.out emp.o main.o
+  916  ./emp.out 
+  917  vim main.c 
+  918  ./emp.out 
+  919  ls -l
+  920  rm *.o *.out
+  921  ls -l
+  922  ./emp.out
+  923  gcc -c emp.c
+  924  gcc -c main.c 
+  925  gcc -o emp.out main.o emp.o
+  926  ./emp.out 
+  927  ls -l
+  928  rm *.out *.o
+  929  ls -l
+  930  vim makefile
+  931  ls -l
+  932  man make
+  933  make
+  934  ls -l
+  935  ./emp.out 
+  936  make clean
+  937  ls
+  938  ls -l
+  939  make
+  940  ls -l
+  941  vim makefile 
+  942  make
+  943  make clean
+  944  make
+  945  vim makefile 
+  946  make
+  947  make run
+  948  ls -l
+  949  make clean
+  950  ls -l
+  951  vim program.c
+  952  gcc -c program.c 
+  953  vim program.c
+  954  gcc -c program.c
+  955  gcc -o program.out program.o
+  956  ./program.out 
+  957  gcc -c -ggdb3 program.c
+  958  gcc -o -ggdb3 program.out program.o
+  959  gdb ./program.out
+  960  man gdb
+  961  gdb ./program.out
+  962  exit
+  963  man grep
+  964  exit
+  965  ping 200.0.1.1
+  966  cd aug2019/kdac/
+  967  ls
+  968  cd os/
+  969  s
+  970  ls
+  971  git add .
+  972  git commit -m "os day02"
+  973  git push
+  974  cd ..
+  975  s
+  976  ls
+  977  cd temp/employee/
+  978  s
+  979  ls
+  980  gcc -c program.c -ggdb3
+  981  gcc -o program.out program.o -ggdb3
+  982  gdb ./program.out 
+  983  history > class_work.txt
