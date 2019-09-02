@@ -1,0 +1,11 @@
+set autoindent  "enable auto indentation
+set smartindent "enable smart indentation
+set cindent "enable c indentation
+set showmatch "show matching parenthesis
+set number  "enable line numbers
+set nowrap  "no line wrapping
+set shiftwidth=2  "round indent actions to multiple of 2
+set autowriteall  "enable autocompletion feature for words
+set backspace=2 "backspace = 2 spaces
+set tabstop=2 "tab = 2 spaces
+syntax on "enable syntax highlighting
